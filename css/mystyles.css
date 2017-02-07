@@ -16,9 +16,9 @@
     padding: 20px 0px 20px 0px;
 }
 .jumbotron {
-    padding:70px 30px 70px 30px;
+    padding:20px 30px 20px 30px;
     margin:0px auto;
-    background: #7986CB ;
+    //background: #000000;
     color:floralwhite;
 }
 
@@ -27,16 +27,20 @@ address{
     margin:0px;
     color:#0f0f0f;
 }
-
+h1
+{
+	font-family: "Roboto";
+}
 body{
     padding:50px 0px 0px 0px;
     z-index:0;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: black;
 	color: white;
 }
 
 .navbar-inverse {
-    //background: #303F9F;
+    background: #303F9F;
 	background: rgba(0,255,255,.3);
 	 
 }
@@ -103,6 +107,7 @@ body{
 .main
 {
  background-image: url('../img/dy.jpg');
+ background-color:black;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -236,7 +241,7 @@ section#contact .text-danger {
 .team-member {
   text-align: center;
   margin-bottom: 50px;
-  color: blue;
+  color: black;
 }
 .team-member img {
   margin: 0 auto;
@@ -252,10 +257,13 @@ section#contact .text-danger {
 }
 
 .text-muted {
-  color: #ffbf00;
+  color: yellow;
   text-align: center;
 }
-
+ a:hover, a:focus
+ {
+	text-decoration:none;
+ }
 
 
 footer {
@@ -313,3 +321,149 @@ ul.social-buttons li a:active {
     width: 60vw;
     height: auto;
 }
+
+.tlt
+{
+	color: green;
+}
+
+/*ANIMATION*/
+
+.left {
+
+    //float: left;
+    position: relative;
+	
+    -webkit-animation-name: example1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example1;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example1 {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example1 {
+    0%   { left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+
+.right {
+
+    float: right;
+    position: relative;
+	-webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   { right:0px; top:0px;}
+    50%  { right:200px; top:0px;}
+    //50%  { left:200px; top:200px;}
+    //75%  { left:0px; top:200px;}
+    100% { right:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   {right:0px; top:0px;}
+    50%  {right:200px; top:0px;}
+   // 50%  { left:200px; top:200px;}
+    //75%  { left:0px; top:200px;}
+    100% { right:0px; top:0px;}
+}
+
+.yanthrabtn {
+
+    float: left;
+    position: relative;
+	
+    -webkit-animation-name: example11; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example11;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example11 {
+    0%   { left: 0px; top:0px;}
+    25%  { left:500px; top:0px;}
+    50%  { left:500px; top:200px;}
+    //75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example11 {
+    0%   { left: 0px; top:0px;}
+   // 25%  { left:500px; top:0px;}
+    50%  { left:500px; top:0px;}
+    //75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+}
+
+.dakshabtn {
+
+    float: right;
+    position: relative;
+	
+    -webkit-animation-name: example12; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example12;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example12 {
+    0%   { right: 0px; top:0px;}
+    //25%  { right:500px; top:0px;}
+    50%  { right:500px; top:0px;}
+    //75%  { right:0px; top:200px;}
+    100% { right:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example12 {
+    0%   { right: 0px; top:0px;}
+    //25%  { right:500px; top:0px;}
+    50%  { right:500px; top:0px;}
+    //75%  { right:0px; top:200px;}
+    100% { right:0px; top:0px;}
+}
+
+.whatsapp
+{
+  width: 50px
+  height: 50px
+  margin: 0 auto
+  text-align: center
+  border: 3px solid green
+  border-radius: 50%
+  transition-duration: 0.5s
+}
+  .fa-whatsapp
+  {
+    padding-top: 5px
+    font-size: 40px
+    text-decoration: none
+    color: green
+}
+
+  &:hover
+  {    background-color: green
+    .fa-whatsapp
+      color: white
+  }

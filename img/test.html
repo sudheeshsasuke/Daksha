@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body{background-color: #000000;}
+.left {
+
+    
+    position: relative;
+	
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example1;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example1 {
+    0%   {background-color:red; left:0px; top:0px;}
+    50%  {background-color:yellow; left:40%; top:0px;}
+    //50%  {background-color:blue; left:200px; top:200px;}
+    //75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example1 {
+    0%   {background-color:red; left:0px; top:0px;}
+    50%  {background-color:yellow; left:40%; top:0px;}
+   // 50%  {background-color:blue; left:200px; top:200px;}
+    //75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+.right {
+
+    float: right;
+    position: relative;
+	-webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {background-color:red; right:0px; top:0px;}
+    50%  {background-color:yellow; right:40%; top:0px;}
+    //50%  {background-color:blue; left:200px; top:200px;}
+    //75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; right:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   {background-color:red; right:0px; top:0px;}
+    50%  {background-color:yellow; right:40%; top:0px;}
+   // 50%  {background-color:blue; left:200px; top:200px;}
+    //75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; right:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+
+
+<img class="left" src="test1.jpg">
+<img class="right" src="test2.jpg">
+
+</body>
+</html>
