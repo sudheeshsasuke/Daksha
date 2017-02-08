@@ -36,13 +36,17 @@ body{
     z-index:0;
 	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background: black;
-	color: white;
+	color: black;
 }
 
 .navbar-inverse {
     background: #303F9F;
-	background: rgba(0,255,255,.3);
+	background: rgba(0,100,100,0.8);
 	 
+}
+
+.navbar-inverse .navbar-nav > a {
+  color: #fffff;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
@@ -444,26 +448,56 @@ ul.social-buttons li a:active {
     100% { right:0px; top:0px;}
 }
 
-.whatsapp
-{
-  width: 50px
-  height: 50px
-  margin: 0 auto
-  text-align: center
-  border: 3px solid green
-  border-radius: 50%
-  transition-duration: 0.5s
-}
-  .fa-whatsapp
-  {
-    padding-top: 5px
-    font-size: 40px
-    text-decoration: none
-    color: green
+
+  
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
-  &:hover
-  {    background-color: green
-    .fa-whatsapp
-      color: white
-  }
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}

@@ -88,11 +88,20 @@ a:hover, a:focus
 {
 	text-align: center; 
 	text-decoration: none;
-	color: blue;
+	color: green;
+}
+.mid1
+{
+	text-align: center; 
+	text-decoration: none;
+	color: orange;
+	background-color: purple;
+	padding: 5px;
 }
 .blueText
 {
-	color: orange;
+	color: blue;
+	padding: 5px;
 }
 .eventdetails
 {
