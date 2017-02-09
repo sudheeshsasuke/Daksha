@@ -258,7 +258,7 @@
 
   $.fn.textillate.defaults = {
     selector: '.texts',
-    loop: true,
+    loop: false,
     minDisplayTime: 2000,
     initialDelay: 0,
     in: {
@@ -276,7 +276,7 @@
       delay: 50,
       sync: false,
       reverse: false,
-      shuffle: true,
+      shuffle: false,
       callback: function () {}
     },
     autoStart: true,
