@@ -20,7 +20,9 @@ content must come *after* these tags -->
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap-social.css" rel="stylesheet">
   <link href="css/mystyles.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/countdown.demo.css" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
   
    <link href="assets/animate.css" rel="stylesheet">
    <link href="2/thumbnail-slider.css" rel="stylesheet" type="text/css" />
@@ -89,29 +91,39 @@ content must come *after* these tags -->
                 <div class="col-md-12" >
 					<h1 class="tlt" style="color:white">College of Engineering Attingal</h1>
 					<h3 class="tlt" style="color:#ccff99; padding: 20px;">" Sustain.. Serene.. Green.."</h3>
+					
 				</div>	
             </div>
 			<div class="row" style="padding-top: 30%;">
                 <div class="col-xs-12 col-sm-4" >
-					<a href="cultural.html"><button type="button" class="btn btn-info btn-lg yanthrabtn">Yanthra Events</button></a>
+					<a href="Technical.html"><button type="button" class="btn btn-info btn-lg yanthrabtn">Yanthra Events</button></a>
 				</div>
 				<div class="col-xs-12 col-sm-4" >
 					<p style="padding:20px;"></p>
 				</div>
 				<div class="col-xs-12 col-sm-4" >
-					<a href="Technical.html"><button type="button" class="btn btn-warning btn-lg dakshabtn">Daksha Events</button></a>
+					<a href="cultural.html"><button type="button" class="btn btn-warning btn-lg dakshabtn">Daksha Events</button></a>
 				</div>				
             </div>
+					
         </div>
     </header>
 
   <div class="container">
 
-
-			
-			
+  
 						<!--VIDEO-->
 			<div class="row row-content">
+				<div class="col-xs-12">
+					<div id="content">
+
+						<h4 style="color: white; text-align: center-left;">The Count down Begins...</h4>
+						<!-- Python datetime.timedelta str output -->
+						<!-- print datetime.timedelta(days=600, hours=3, minutes=59, seconds=12) -->
+						<div class="alt-2">12 days, 3:59:12</div>
+
+					</div>
+				</div>
 				<div class="col-xs-12">
 					<p style="padding: 20px;"></p>
 					<h2 style="text-align: center; color: orange;">Promo Video</h2>
@@ -120,6 +132,7 @@ content must come *after* these tags -->
 					  Your browser does not support HTML5 video.
 					</video>
 				</div>
+				
 			</div>
 
   
@@ -314,7 +327,24 @@ content must come *after* these tags -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+    <!-- Time plugin) -->
+	<script src="js/jquery.countdown.js"></script>
+<script>
+        window.jQuery(function ($) {
+            "use strict";
 
+            $('time').countDown({
+                with_separators: false
+            });
+            $('.alt-1').countDown({
+                css_class: 'countdown-alt-1'
+            });
+            $('.alt-2').countDown({
+                css_class: 'countdown-alt-2'
+            });
+
+        });
+        </script>
 <script>
         $(document).ready(function(){
             $("#mycarousel").carousel( { interval: 2000 } );
