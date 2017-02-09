@@ -1,0 +1,101 @@
+<html>
+<head>
+<style>
+body
+{
+ text-align:center;
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ font-family:helvetica;
+ background-color:orange;
+}
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+ width:995px;
+}
+#effect
+{
+ background-color:#610B0B;
+ position:relative;	
+ width:380px;
+ height:220px;
+ margin-left:300px;
+ box-shadow:0px 0px 10px 0px #610B0B;
+}
+#effect p
+{
+ margin-top:100px;
+ font-size:30px;
+ color:#F79F81;
+}
+#curtain1
+{
+ top:0px;
+ position:absolute;
+ left:0px;
+ height:220px;
+}
+#curtain2
+{
+ top:0px;
+ position:absolute;
+ height:220px;
+ right:0px;
+}
+#curtain_buttons input[type="button"]
+{
+ margin-top:20px;
+ width:150px;
+ height:45px;
+ border-radius:2px;
+ color:white;
+ background-color:#B43104;
+ border:none;
+ border-bottom:6px solid #8A2908;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+function open_curtain()
+{
+ $("#curtain1").animate({width:20},1000);
+ $("#curtain2").animate({width:20},1000);
+}
+function close_curtain()
+{
+ $("#curtain1").animate({width:200},1000);
+ $("#curtain2").animate({width:191},1000);
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<h1 style="margin-top: 20%;">Inauguration of Daksha'17 Website!</p></h1>
+<br>
+<br>
+<br>
+<div id="effect">
+<br>
+<br>
+<br>
+	<h1>
+		<a href="index.html"><button type="button" class="btn btn-info btn-lg">Daksha'17</button></a>
+	</h1>
+ <img src="img/curtain1.jpg" id="curtain1">
+ <img src="img/curtain2.jpg" id="curtain2">
+</div>
+
+<div id="curtain_buttons">
+ <input type="button" value="OPEN CURTAIN" onclick="open_curtain();">
+ <input type="button" value="CLOSE CURTAIN" onclick="close_curtain();">
+</div>
+
+</div>
+</body>
+</html>
