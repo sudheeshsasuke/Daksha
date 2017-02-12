@@ -1,136 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+	<link rel="shortcut icon" href="img/d.jpg" type="image/x-icon">
+  <title>Website Team|Yanthra 2017</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
       border-radius: 0;
-    }
-
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: black;
-      padding: 25px;
-	  min-height: 100px;
-	  color: white;
-    }
-.main
-{
- background-image: url('/img/webteam.jpg');
- background-color:black;
- z-index:2;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-size: cover;
-  text-align: center;
-  color: white;
- 
-}
-	
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 50%;
-    }
-}
-ul.social-buttons {
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  ul.social-buttons {
   margin-bottom: 0;
 }
 ul.social-buttons li a {
   display: block;
-  background-color: blue;
+  background-color: #6e20bc;
   height: 40px;
   width: 40px;
   border-radius: 100%;
@@ -152,119 +77,105 @@ ul.social-buttons li a:active {
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="index.html">Home</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="Technical.html">Yanthra</a></li>
+        <li><a href="cultural.html">Daksha</a></li>
+		<li><a href="Team.html">Team</a></li>
+        <li><a href="contactus.html">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron main">
-  <div class="container text-center">
-    <h1>Web Site Team</h1>      
-    <p>Behind the scenes page..</p>
-  </div>
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Website Team</h3>
+  <img src="img/webdesign.png" class="img-responsive img-rounded margin" style="display:inline" alt="Bird">
+  <h3>Behind the Scenes</h3>
 </div>
-  
 
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Meet the Team</h3>
+  <p>Though we are not experts, all of us did our absolute best. We did everything with our core values of honesty, hardwork and trust. </p>
 
+</div>
+
+<!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
+  <h3 class="margin"></h3><br>
   <div class="row">
-	<div class="col-xs-12 col-sm-4">
+    <div class="col-sm-4">
 		<h3>FRONTEND DEVELOPER</h3><br>
-		<img id="myImg" src="img/team/sud.jpg" alt="Trolltunga, Norway" >
+		<img id="myImg" src="img/team/sud.jpg" alt="sud" >
 
-		<!-- The Modal -->
-		<div id="myModal" class="modal">
-		  <span class="close">&times;</span>
-		  <img class="modal-content" id="img01">
-		  <div id="caption"></div>
-		</div>
-
-		<h4>Sudheesh S Babu</h4>
-								<p class="text-muted">Technical Head</p>
+				<h4>SUDHEESH S BABU</h4>
+								<p class="text-muted">sudheeshsbabu@gmail.com</p>
 								<p class="text-muted"><b>mob: 7034634976</b></p>
 								<ul class="list-inline social-buttons">
 									<li><a href="tel:7034634976"><i class="fa fa-whatsapp"></i></a>
 									</li>
 									<li><a href="https://www.facebook.com/sudheesh.sudhi.3158652"><i class="fa fa-facebook"></i></a>
 									</li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a>
+									<li><a href="https://www.linkedin.com/in/sudheesh-s-babu-246280b0"><i class="fa fa-linkedin"></i></a>
 									</li>
 								</ul>
-	</div>
 
 
-	<div class="col-xs-12 col-sm-4">
-		 <h3>BACKEND DEVELOPER</h3><br>
-		<img id="myImg" src="img/team/akhil.jpg" alt="Trolltunga, Norway" >
+    </div>
+    <div class="col-sm-4"> 
+      		<h3>BACKEND DEVELOPER</h3><br>
+		<img id="myImg" src="img/team/akhil.jpg" alt="maniyan" >
 
-		<!-- The Modal -->
-		<div id="myModal" class="modal">
-		  <span class="close">&times;</span>
-		  <img class="modal-content" id="img01">
-		  <div id="caption"></div>
-		</div>
-
-		<h4>Sudheesh S Babu</h4>
+				<h4>AKHIL K MANIYAN</h4>
 								<p class="text-muted">Technical Head</p>
-								<p class="text-muted"><b>mob: 7034634976</b></p>
+								<p class="text-muted"><b>mob: 9544508649</b></p>
 								<ul class="list-inline social-buttons">
-									<li><a href="tel:7034634976"><i class="fa fa-whatsapp"></i></a>
+									<li><a href="tel:9544508649"><i class="fa fa-whatsapp"></i></a>
 									</li>
-									<li><a href="https://www.facebook.com/sudheesh.sudhi.3158652"><i class="fa fa-facebook"></i></a>
+									<li><a href="https://www.facebook.com/akhil.kmaniyan"><i class="fa fa-facebook"></i></a>
 									</li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a>
 									</li>
 								</ul>
-	</div>
-	
-	<div class="col-xs-12 col-sm-4">
-		 <h3>GRAPHIC DESIGNER</h3><br>
-		<img id="myImg" src="img/team/akhil.jpg" alt="Trolltunga, Norway" >
 
-		<!-- The Modal -->
-		<div id="myModal" class="modal">
-		  <span class="close">&times;</span>
-		  <img class="modal-content" id="img01">
-		  <div id="caption"></div>
-		</div>
+    </div>
+    <div class="col-sm-4"> 
+      		<h3>GRAPHIC DESIGNER</h3><br>
+		<img id="myImg" src="img/team/balu.jpg" alt="sud" >
 
-		<h4>Sudheesh S Babu</h4>
-								<p class="text-muted">Technical Head</p>
-								<p class="text-muted"><b>mob: 7034634976</b></p>
+				<h4>ABHIJITH P BALAKRISHNAN</h4>
+								<p class="text-muted">gethakhil.akm@gmail.com</p>
+								<p class="text-muted"><b>mob: 98958 41663</b></p>
 								<ul class="list-inline social-buttons">
-									<li><a href="tel:7034634976"><i class="fa fa-whatsapp"></i></a>
+									<li><a href="tel:9895841663"><i class="fa fa-whatsapp"></i></a>
 									</li>
-									<li><a href="https://www.facebook.com/sudheesh.sudhi.3158652"><i class="fa fa-facebook"></i></a>
+									<li><a href="https://www.facebook.com/abhijith.balakrishnan"><i class="fa fa-facebook"></i></a>
 									</li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a>
 									</li>
 								</ul>
-	</div>
+
+    </div>
   </div>
-</div><br><br>
+  <h3 class="margin"></h3><br>
+</div>
 
- <footer>
-        <div class="container-fluid text-center">
-            <div class="row">
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <div class="row">
                 <div class="col-md-4">
                     <span class="copyright">Copyright &copy; Daksha 2017</span>
                 </div>
@@ -287,29 +198,7 @@ ul.social-buttons li a:active {
                     </ul>
                 </div>
             </div>
-        </div>
-    </footer>
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
+</footer>
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = "none";
-}
-</script>
 </body>
 </html>
